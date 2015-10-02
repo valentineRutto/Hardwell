@@ -3,4 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="label1">one</string>
+    <string name="label2">Two</string>
+    <string name="body1">Body One</string>
+    <string name="body2">Body Two</string>
 </resources>
