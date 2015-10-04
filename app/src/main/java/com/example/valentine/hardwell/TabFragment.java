@@ -57,7 +57,19 @@ public class TabFragment extends Fragment {
         public int getCount() {
             return int_items;
         }
+        @Override
+        public CharSequence getPageTitle(int position) {
 
+            switch (position){
+                case 0 :
+                    return "Audio";
+                case 1 :
+                    return "Video";
+                case 2 :
+                    return "Social";
+            }
+            return null;
+        }
         @Override
         public boolean isViewFromObject(View view, Object object) {
             return false;
