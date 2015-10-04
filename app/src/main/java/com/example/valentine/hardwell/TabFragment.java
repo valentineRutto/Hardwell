@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -21,24 +22,28 @@ public class TabFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View x = inflater.inflate(R.layout.tab_layout, null);
+        View x =  inflater.inflate(R.layout.tab_layout,null);
         tabLayout = (TabLayout) x.findViewById(R.id.tabs);
         viewPager = (ViewPager) x.findViewById(R.id.viewpager);
 
+
         viewPager.setAdapter(new MyAdapter(getChildFragmentManager()));
+
         tabLayout.post(new Runnable() {
             @Override
             public void run() {
                 tabLayout.setupWithViewPager(viewPager);
             }
         });
+
         return x;
+
     }
 
-    class MyAdapter extends PagerAdapter {
+    class MyAdapter extends FragmentPagerAdapter {
+
         public MyAdapter(FragmentManager fm) {
             super(fm);
         }
@@ -53,10 +58,14 @@ public class TabFragment extends Fragment {
             }
             return null;
         }
+
         @Override
         public int getCount() {
+
             return int_items;
+
         }
+
         @Override
         public CharSequence getPageTitle(int position) {
 
@@ -70,10 +79,7 @@ public class TabFragment extends Fragment {
             }
             return null;
         }
-        @Override
-        public boolean isViewFromObject(View view, Object object) {
-            return false;
-        }
     }
+
 
 }
