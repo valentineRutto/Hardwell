@@ -2,19 +2,38 @@ package com.example.valentine.hardwell;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.graphics.drawable.BitmapDrawable;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.heinrichreimersoftware.materialdrawer.DrawerActivity;
+import com.heinrichreimersoftware.materialdrawer.structure.DrawerProfile;
+
+public class MainActivity extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        drawer.setProfile(
+                new DrawerProfile()
+                        .setRoundedAvatar((BitmapDrawable) getResources().getDrawable(R.drawable.profile_avatar))
+                        .setBackground(getResources().getDrawable(R.drawable.profile_cover))
+                        .setName(getString(R.string.profile_name))
+                        .setDescription(getString(R.string.profile_description))
+                        .setOnProfileClickListener(new DrawerProfile.OnProfileClickListener() {
+                            @Override
+                            public void onClick(DrawerProfile drawerProfile, long id) {
+                                Toast.makeText(MainActivity.this, "Clicked profile #" + id, Toast.LENGTH_SHORT).show();
+                            }
+                        })
+        );
 
 
     }
