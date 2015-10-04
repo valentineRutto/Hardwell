@@ -29,9 +29,14 @@ public class TabFragment extends Fragment {
         viewPager = (ViewPager) x.findViewById(R.id.viewpager);
 
         viewPager.setAdapter(new MyAdapter(getChildFragmentManager()));
-
-
-
+        tabLayout.post(new Runnable() {
+            @Override
+            public void run() {
+                tabLayout.setupWithViewPager(viewPager);
+            }
+        });
+        return x;
+    }
 
     class MyAdapter extends PagerAdapter {
         public MyAdapter(FragmentManager fm) {
@@ -39,8 +44,18 @@ public class TabFragment extends Fragment {
         }
 
         @Override
+        public Fragment getItem(int position)
+        {
+            switch (position){
+                case 0 : return new PrimaryFragment();
+                case 1 : return new SocialFragment();
+                case 2 : return new UpdatesFragment();
+            }
+            return null;
+        }
+        @Override
         public int getCount() {
-            return 0;
+            return int_items;
         }
 
         @Override
