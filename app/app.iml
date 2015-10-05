@@ -77,7 +77,10 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fc48d36d937b10fe5a3dd5d4b3869f58c6093ca2
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.8.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.thefinestartist/ytpa/1.2.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/0.9.0/jars" />
@@ -85,6 +88,9 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.5.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter/1.8.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.5/jars" />
+<<<<<<< HEAD
+>>>>>>> fc48d36d937b10fe5a3dd5d4b3869f58c6093ca2
+=======
 >>>>>>> fc48d36d937b10fe5a3dd5d4b3869f58c6093ca2
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jacoco" />
@@ -112,14 +118,20 @@
     <orderEntry type="library" exported="" name="design-23.0.1" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-23.0.1" level="project" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="library" exported="" name="cardview-v7-21.0.3" level="project" />
     <orderEntry type="library" exported="" name="recyclerview-v7-21.0.3" level="project" />
     <orderEntry type="library" exported="" name="support-v4-23.0.1" level="project" />
 =======
+=======
+>>>>>>> fc48d36d937b10fe5a3dd5d4b3869f58c6093ca2
     <orderEntry type="library" exported="" name="twitter-core-1.5.0" level="project" />
     <orderEntry type="library" exported="" name="ytpa-1.2.0" level="project" />
     <orderEntry type="library" exported="" name="tweet-composer-0.9.0" level="project" />
     <orderEntry type="library" exported="" name="gson-2.3" level="project" />
+<<<<<<< HEAD
+>>>>>>> fc48d36d937b10fe5a3dd5d4b3869f58c6093ca2
+=======
 >>>>>>> fc48d36d937b10fe5a3dd5d4b3869f58c6093ca2
     <orderEntry type="library" exported="" name="support-annotations-23.0.1" level="project" />
     <orderEntry type="library" exported="" name="fabric-1.3.5" level="project" />
