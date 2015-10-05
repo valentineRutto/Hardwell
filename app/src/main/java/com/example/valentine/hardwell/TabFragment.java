@@ -71,9 +71,9 @@ public class TabFragment extends Fragment {
 
             switch (position){
                 case 0 :
-                    return "Audio";
+                    return "About";
                 case 1 :
-                    return "Video";
+                    return "Mixxes";
                 case 2 :
                     return "Social";
             }
