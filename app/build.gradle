@@ -1,20 +1,13 @@
 buildscript {
     repositories {
-<<<<<<< HEAD
+
     }
 
-    dependencies {
-=======
-        maven { url 'https://maven.fabric.io/public' }
-    }
 
-    dependencies {
-        classpath 'io.fabric.tools:gradle:1.+'
->>>>>>> fc48d36d937b10fe5a3dd5d4b3869f58c6093ca2
-    }
+
+
 }
 apply plugin: 'com.android.application'
-apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 23
@@ -35,21 +28,14 @@ android {
     }
 }
 repositories {
-    maven { url 'https://maven.fabric.io/public' }
 
 }
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:+'
     compile 'com.android.support:design:23.+'
-<<<<<<< HEAD
-    compile 'com.android.support:cardview-v7:21.0.+'
-    compile 'com.android.support:recyclerview-v7:21.0.+'
 
-=======
-    compile 'com.thefinestartist:ytpa:1.2.0'
-    compile('com.twitter.sdk.android:twitter:1.8.0@aar') {
-        transitive = true;
-    }
->>>>>>> fc48d36d937b10fe5a3dd5d4b3869f58c6093ca2
+    compile 'com.android.support:cardview-v7:23.+'
+    compile 'com.android.support:recyclerview-v7:23.+'
+
 }
