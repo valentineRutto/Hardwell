@@ -2,5 +2,11 @@
     <string name="app_name">Hardwell</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="bio">
+
+At the age of 25, Robbert van de Corput, better known as Hardwell, capped off a 10 year journey when he was crowned World’s #1 DJ in the 2013 Top 100 DJs Poll cementing his position as the electronic scenes newest superstar DJ and becoming the youngest ever winner of the coveted Top 100 DJs award.
+
+In 2014 the Dutch megastar was crowned World’s #1 DJ for a second consecutive year. Having conquered almost every global territory from Asia to Africa, South America, Australia and Europe, the remarkable story behind this archetypal international DJ is one of devotion and relentless hard work...
+</string>
 
 </resources>

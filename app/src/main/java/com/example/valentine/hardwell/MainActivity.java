@@ -1,12 +1,9 @@
 package com.example.valentine.hardwell;
 
-import android.app.Activity;
-import android.app.Fragment;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
-        mFragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
+        mFragmentTransaction.replace(R.id.containerView,new Send()).commit();
 
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -39,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (menuItem.getItemId() == R.id.nav_item_sent) {
                     FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-                    fragmentTransaction.replace(R.id.containerView, new SentFragment()).commit();
+                    fragmentTransaction.replace(R.id.containerView,  new TabFragment()).commit();
 
                 }
 
