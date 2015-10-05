@@ -18,20 +18,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="com.thefinestartist.ytpa.YouTubePlayerActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="sensor"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-
-        <!--Need Your Google API Key-->
-        <meta-data
-            android:name="com.thefinestartist.ytpa.YouTubePlayerActivity.ApiKey"
-            android:value="AIzaSyAhn3ZDjIR9GwK4xftNb_6tYCK-kCgIE7s" />
-
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="a52e7d1b559ea35cf6c66c368440e365b2605a7f" />
     </application>
 
 </manifest>
