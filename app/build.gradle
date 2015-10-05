@@ -1,3 +1,10 @@
+buildscript {
+    repositories {
+    }
+
+    dependencies {
+    }
+}
 apply plugin: 'com.android.application'
 
 android {
